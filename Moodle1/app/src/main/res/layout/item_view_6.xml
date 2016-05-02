@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#4edeed15">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name"
+        android:id="@+id/comm_name_textview"
+        android:layout_marginTop="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Content"
+        android:id="@+id/comm_desc_textview"
+        android:layout_alignTop="@+id/comm_name_textview"
+        android:layout_centerHorizontal="true"
+        android:textColor="#217aee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Date Created"
+        android:id="@+id/comm_date_textview"
+        android:layout_below="@+id/comm_name_textview"
+        android:layout_alignLeft="@+id/comm_name_textview"
+        android:layout_alignStart="@+id/comm_name_textview"
+        android:layout_marginTop="44dp"
+        android:textSize="15dp" />
+</RelativeLayout>

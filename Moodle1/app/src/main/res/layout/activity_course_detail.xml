@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.edel.moodle1.Course_detail"
+    android:background="#dfe7a2"
+    android:clickable="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/course_detail_id"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:capitalize="characters" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assignments"
+        android:id="@+id/ass_btn"
+        android:layout_marginTop="72dp"
+        android:background="#4f97a2"
+        android:layout_below="@+id/course_detail_id"
+        android:layout_toLeftOf="@+id/course_detail_id"
+        android:layout_toStartOf="@+id/course_detail_id"
+        android:textColor="#faf5f5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Threads"
+        android:id="@+id/thread_btn"
+        android:layout_alignTop="@+id/ass_btn"
+        android:layout_toRightOf="@+id/course_detail_id"
+        android:layout_toEndOf="@+id/course_detail_id"
+        android:background="#9a9df1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Create a new Thread :"
+        android:id="@+id/textView17"
+        android:layout_below="@+id/thread_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="38dp"
+        android:textColor="#e14526" />
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_editText"
+        android:hint="Title"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColorHint="#d94141" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/th_desc_editText"
+        android:hint="Description"
+        android:layout_below="@+id/title_editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColorHint="#eb2828" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post"
+        android:id="@+id/post_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="51dp"
+        android:backgroundTintMode="add"
+        android:backgroundTint="#db8585"
+        android:background="#3d6da7" />
+
+</RelativeLayout>
